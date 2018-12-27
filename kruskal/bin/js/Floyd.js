@@ -1,5 +1,5 @@
-var ihiau;
-(function (ihiau) {
+var ihaiu;
+(function (ihaiu) {
     var Floyd = /** @class */ (function () {
         function Floyd() {
         }
@@ -73,7 +73,6 @@ var ihiau;
                 }
                 this.print(arcs, nodeNum, k);
             }
-            this.printPath(arcs, path, nodeNum);
             // 路径字典
             var pathMap = this.generatePathMap(arcs, path, nodeNum);
             this.printPathMap(arcs, pathMap, nodeNum);
@@ -158,6 +157,6 @@ var ihiau;
         };
         return Floyd;
     }());
-    ihiau.Floyd = Floyd;
-})(ihiau || (ihiau = {}));
+    ihaiu.Floyd = Floyd;
+})(ihaiu || (ihaiu = {}));
 //# sourceMappingURL=Floyd.js.map

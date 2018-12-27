@@ -1,7 +1,12 @@
-namespace ihiau
+namespace ihaiu
 {
     export class Floyd
     {
+        constructor()
+        {
+
+        }
+        
         // 成本矩阵
         arcs: number[][];
 

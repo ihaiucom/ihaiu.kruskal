@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,400">
+  <displayList>
+    <component id="n1_jaho" name="logTexArea" src="jaho2" fileName="TextArea.xml" xy="0,0" size="600,400">
+      <relation target="" sidePair="width-width,height-height"/>
+      <Label title="sa&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;&#xD;s&#xD;s&#xD;s&#xD;s&#xD;&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;" titleColor="#999999"/>
+    </component>
+    <component id="n0_jaho" name="openSettingButton" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="250,360" size="100,40">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <Button title="设置数据"/>
+    </component>
+    <component id="n2_jaho" name="openSettingButton" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="487,360" size="100,40">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <Button title="清除日志"/>
+    </component>
+    <component id="n3_jaho" name="settingPanel" src="jaho1" fileName="FindSettingPanel.xml" xy="0,0" hideByEditor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>

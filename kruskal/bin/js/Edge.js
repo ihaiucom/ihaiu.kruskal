@@ -1,10 +1,10 @@
-var ihiau;
-(function (ihiau) {
+var ihaiu;
+(function (ihaiu) {
     var Edge = /** @class */ (function () {
         function Edge() {
         }
         return Edge;
     }());
-    ihiau.Edge = Edge;
-})(ihiau || (ihiau = {}));
+    ihaiu.Edge = Edge;
+})(ihaiu || (ihaiu = {}));
 //# sourceMappingURL=Edge.js.map

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,400">
+  <displayList>
+    <image id="n5_jaho" name="n5" src="jaho1b" fileName="images/p2.png" pkg="uga4m7t5" xy="0,0" size="600,400" alpha="0.72" color="#c6f5f5">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <component id="n0_jaho" name="okButton" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="221,349" size="100,40">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <Button title="Ok"/>
+    </component>
+    <component id="n3_jaho" name="cancelButton" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="347,350" size="100,40">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <Button title="Cannel"/>
+    </component>
+    <component id="n4_jaho" name="nodeNumInput" src="jaho2l" fileName="Input/NumericInput.xml" pkg="uga4m7t5" xy="167,62" size="274,20">
+      <Label title="4"/>
+    </component>
+    <text id="n6_jaho" name="n6" xy="73,56" size="85,28" fontSize="20" color="#ffffff" text="节点数："/>
+    <text id="n8_jaho" name="n8" xy="73,110" size="85,28" fontSize="20" color="#ffffff" text="链接边："/>
+    <component id="n9_jaho" name="edgeInput" src="jaho2" fileName="TextArea.xml" xy="165,117" size="403,157">
+      <Label title="x = [0, 0, 1, 2, 3, 3, 4], y = [1, 2, 3, 4, 4, 5, 5], w = [2, 5, 3, 4, 3, 4, 1]"/>
+    </component>
+  </displayList>
+</component>

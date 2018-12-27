@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="300,200" overflow="scroll" scrollBarRes="ui://uga4m7t5jaho2w,ui://uga4m7t5jaho30" extention="Label">
+  <displayList>
+    <image id="n11_jaho" name="n11" src="jahos" fileName="images/p4.png" pkg="uga4m7t5" xy="0,0" size="300,200" aspect="true">
+      <relation target="" sidePair="width-width,height-height"/>
+    </image>
+    <text id="n10_jaho" name="title" xy="0,0" size="300,596" input="true" fontSize="14" color="#ffffff" autoSize="height" text="sa&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;&#xA;s&#xA;s&#xA;s&#xA;s&#xA;&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;s&#xA;">
+      <relation target="" sidePair="width-width"/>
+    </text>
+  </displayList>
+</component>

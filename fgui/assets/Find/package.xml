@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="onlyi1f8" jpegQuality="80" compressPNG="true">
+  <resources>
+    <component id="jaho0" name="FindWindow.xml" path="/" exported="true"/>
+    <component id="jaho1" name="FindSettingPanel.xml" path="/" exported="true"/>
+    <component id="jaho2" name="TextArea.xml" path="/" exported="true"/>
+  </resources>
+  <publish name="Find" genCode="true"/>
+</packageDescription>

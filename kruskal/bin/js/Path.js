@@ -1,5 +1,5 @@
-var ihiau;
-(function (ihiau) {
+var ihaiu;
+(function (ihaiu) {
     /**
      * 路径
      */
@@ -10,6 +10,6 @@ var ihiau;
         }
         return Path;
     }());
-    ihiau.Path = Path;
-})(ihiau || (ihiau = {}));
+    ihaiu.Path = Path;
+})(ihaiu || (ihaiu = {}));
 //# sourceMappingURL=Path.js.map

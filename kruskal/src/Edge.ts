@@ -1,4 +1,4 @@
-namespace ihiau
+namespace ihaiu
 {
     export class Edge
     {

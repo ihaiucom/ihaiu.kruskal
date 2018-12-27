@@ -1,7 +1,14 @@
-namespace ihiau
+namespace ihaiu
 {
-    export class Krusal
+    export class Kruskal
     {
+
+        constructor()
+        {
+
+        }
+        
+
         /** 边列表 */
         private edgeList : Edge[] = [];
 

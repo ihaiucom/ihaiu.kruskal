@@ -1,5 +1,5 @@
-var ihiau;
-(function (ihiau) {
+var ihaiu;
+(function (ihaiu) {
     /**
      * 节点
      */
@@ -10,6 +10,6 @@ var ihiau;
         }
         return Node;
     }());
-    ihiau.Node = Node;
-})(ihiau || (ihiau = {}));
+    ihaiu.Node = Node;
+})(ihaiu || (ihaiu = {}));
 //# sourceMappingURL=Node.js.map

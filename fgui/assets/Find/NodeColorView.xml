@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="30,30" pivot="0.5,0.5" anchor="true" extention="Label">
+  <controller name="state" alias="状态" exported="true" pages="0,normal,1,disable,2,start,3,end,4,green" selected="4"/>
+  <displayList>
+    <image id="n0_jaho" name="bg" src="jaho4" fileName="images/circular.png" xy="0,0">
+      <gearDisplay controller="state" pages="0"/>
+    </image>
+    <image id="n3_jaho" name="n3" src="jaho8" fileName="images/circular_disable.png" xy="0,0">
+      <gearDisplay controller="state" pages="1"/>
+    </image>
+    <image id="n4_jaho" name="n4" src="jahog" fileName="images/circular_end(1).png" xy="0,0">
+      <gearDisplay controller="state" pages="3"/>
+    </image>
+    <image id="n5_jaho" name="n5" src="jahob" fileName="images/circular_green.png" xy="0,0">
+      <gearDisplay controller="state" pages="4"/>
+    </image>
+    <image id="n6_jaho" name="n6" src="jahof" fileName="images/circular_start.png" xy="0,0">
+      <gearDisplay controller="state" pages="2"/>
+    </image>
+  </displayList>
+</component>

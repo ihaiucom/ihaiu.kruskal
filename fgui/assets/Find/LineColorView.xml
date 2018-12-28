@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,2" extention="Label">
+  <controller name="state" alias="状态" exported="true" pages="0,normal,1,disable,2,green,3,greenMax" selected="1"/>
+  <displayList>
+    <image id="n3_jaho" name="line" src="jaho7" fileName="images/line.png" xy="0,1" pivot="0,0.5" anchor="true" size="100,2">
+      <gearDisplay controller="state" pages="0"/>
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <image id="n5_jaho" name="n5" src="jahom" fileName="images/line_disable.png" xy="0,0" size="100,1" alpha="0.5">
+      <gearDisplay controller="state" pages="1"/>
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <image id="n6_jaho" name="n6" src="jahon" fileName="images/line_green.png" xy="0,0">
+      <gearDisplay controller="state" pages="2"/>
+      <relation target="" sidePair="width-width"/>
+    </image>
+    <image id="n7_jaho" name="n7" src="jahoq" fileName="images/line_redMax.png" xy="0,-1">
+      <gearDisplay controller="state" pages="3"/>
+      <relation target="" sidePair="width-width"/>
+    </image>
+  </displayList>
+</component>

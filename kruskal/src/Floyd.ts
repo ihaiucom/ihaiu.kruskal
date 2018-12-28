@@ -1,12 +1,16 @@
 namespace ihaiu
 {
+    /** 最短寻路算法之Floyd */
     export class Floyd
     {
         constructor()
         {
 
         }
-        
+
+        // 顶点数
+        nodeNum: number= 0;
+
         // 成本矩阵
         arcs: number[][];
 
@@ -24,6 +28,13 @@ namespace ihaiu
         public getArcs(from: number, to: number): number
         {
             return this.arcs[from][to];
+        }
+
+        /** 是否有连接线 */
+        public hasEdge(from: number, to: number): boolean
+        {
+            let arc = this.getArcs(from, to);
+            return arc != Number.MAX_VALUE && arc != 0;
         }
 
         /** 获取路径中最大成本 */
@@ -48,6 +59,39 @@ namespace ihaiu
             return max;
         }
 
+
+        public getPathPointsMaxArcByPath(ponts: number[]): number[]
+        {
+            let from = 0;
+            let to = 0;
+            let max = -1;
+            for(let i = 0; i < ponts.length - 1; i ++)
+            {
+                let u = ponts[i];
+                let v = ponts[i + 1];
+                let d = this.arcs[u][v];
+                if(d > max)
+                {
+                    max = d;
+                    from = u;
+                    to = v;
+                }
+            }
+            return [from, to];
+        }
+
+        public calculationByGraphData(g: GraphData)
+        {
+            g.check();
+            this.calculation(
+                g.nodeNum, 
+                g.edegeNum,
+                g.x,
+                g.y,
+                g.w
+                );
+        }
+
         /** 计算寻路 */
         public calculation(nodeNum: number, edegeNum: number, x: number[], y: number[], w: number[])
         {
@@ -55,6 +99,16 @@ namespace ihaiu
             let arcs: number[][] = [];
             // 路径矩阵
             let path: number[][] = [];
+
+            // 矫正顶点数量
+            let num = 0;
+            for(let i = 0; i < x.length; i ++)
+            {  
+                num = Math.max(x[i], num);
+                num = Math.max(y[i], num);
+            }
+            nodeNum = Math.max(num + 1, nodeNum);
+            this.nodeNum = nodeNum;
             
 
 
@@ -90,6 +144,17 @@ namespace ihaiu
                 arcs[u][v] = w[i];
                 arcs[v][u] = w[i];
             }
+
+            this.arcs = [];
+            for(let u = 0; u < arcs.length; u ++)
+            {
+                this.arcs[u] = [];
+
+                for(let v = 0; v < arcs[u].length; v ++)
+                {
+                    this.arcs[u][v] = arcs[u][v];
+                }
+            }
             
             // floyd算法
             // if ( arcs[i][k]  + arcs[k][j] < arcs[i][j] )
@@ -122,7 +187,6 @@ namespace ihaiu
 
             this.printPathMap(arcs, pathMap, nodeNum);
 
-            this.arcs = arcs;
             this.pathMap = pathMap;
         }
 
@@ -158,6 +222,7 @@ namespace ihaiu
         // 打印矩阵
         print(arcs: number[][], nodeNum: number, index: number)
         {
+            return;
             console.log("step of %d:", index);
             for(let u = 0; u < nodeNum; u ++)
             {

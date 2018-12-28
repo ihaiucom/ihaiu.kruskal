@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="100,2" extention="Label">
+  <controller name="state" alias="状态" exported="true" pages="0,normal,1,disable,2,green,3,greenMax" selected="1"/>
+  <displayList>
+    <component id="n3_jaho" name="line" src="jahol" fileName="LineColorView.xml" xy="0,1" pivot="0,0.5" anchor="true" size="100,4" controller="state,0"/>
+    <text id="n4_jaho" name="title" xy="40,-8" size="19,19" fontSize="12" color="#333333" strokeColor="#000000" text="10">
+      <gearColor controller="state" pages="0,1,2,3" values="#ffffff,#000000|#333333,#000000|#00cc00,#000000|#ff6600,#000000"/>
+    </text>
+  </displayList>
+</component>

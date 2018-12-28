@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="600,400">
+  <displayList>
+    <text id="n2_jaho" name="name" xy="243,18" size="112,19" alpha="0.78" fontSize="12" color="#cccccc" align="center" vAlign="middle" text="http://blog.ihaiu.com">
+      <relation target="" sidePair="center-center"/>
+    </text>
+  </displayList>
+</component>

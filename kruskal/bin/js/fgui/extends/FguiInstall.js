@@ -2,6 +2,7 @@ var fgui;
 (function (fgui) {
     var FguiInstall = /** @class */ (function () {
         function FguiInstall() {
+            this.sComplete = new signals.Signal();
         }
         // 初始化系统
         FguiInstall.prototype.installSystem = function () {
@@ -14,6 +15,7 @@ var fgui;
                 { url: "res/fgui/BlackSkin.bin", type: Laya.Loader.BUFFER },
                 { url: "res/fgui/Find.bin", type: Laya.Loader.BUFFER },
                 { url: "res/fgui/BlackSkin_atlas0.png", type: Laya.Loader.IMAGE },
+                { url: "res/fgui/Find_atlas0.png", type: Laya.Loader.IMAGE },
             ], Laya.Handler.create(this, this.onLoadedSystem));
         };
         // 加载完系统UI
@@ -23,6 +25,8 @@ var fgui;
             Laya.stage.addChild(fairygui.GRoot.inst.displayObject);
             var findWindow = Find.FindWindow.createInstance();
             fairygui.GRoot.inst.addChild(findWindow);
+            ihaiu.GameMain.FindWindow = findWindow;
+            this.sComplete.dispatch();
         };
         return FguiInstall;
     }());

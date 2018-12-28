@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="30,30" pivot="0.5,0.5" anchor="true" extention="Label">
+  <controller name="state" alias="状态" exported="true" pages="0,normal,1,disable,2,start,3,end,4,green" selected="2"/>
+  <displayList>
+    <component id="n0_jaho" name="bg" src="jahoc" fileName="NodeColorView.xml" xy="15,15" controller="state,2">
+      <gearColor controller="state" pages="1,2,3,4" values="#999999|#ffcc00|#ff3300|#66ff00" default="#ffffff"/>
+    </component>
+    <text id="n1_jaho" name="title" xy="0,0" size="30,30" locked="true" fontSize="12" align="center" vAlign="middle" autoSize="none" text="15">
+      <relation target="" sidePair="width-width,height-height"/>
+    </text>
+    <text id="n2_jaho" name="name" xy="0,26" size="30,19" fontSize="12" color="#00cc00" align="center" vAlign="middle" autoSize="none" strokeColor="#000000" text="start">
+      <gearDisplay controller="state" pages="2,3"/>
+      <gearText controller="state" pages="3" values="end" default="start"/>
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+  </displayList>
+</component>

@@ -2,6 +2,7 @@ module fgui
 {
     export class FguiInstall
     {
+		sComplete: signals.Signal = new signals.Signal();
         
         // 初始化系统
 		installSystem()
@@ -18,6 +19,7 @@ module fgui
 				{ url: "res/fgui/BlackSkin.bin", type: Laya.Loader.BUFFER },
 				{ url: "res/fgui/Find.bin", type: Laya.Loader.BUFFER },
 				{ url: "res/fgui/BlackSkin_atlas0.png", type: Laya.Loader.IMAGE },
+				{ url: "res/fgui/Find_atlas0.png", type: Laya.Loader.IMAGE },
 
 			], Laya.Handler.create(this, this.onLoadedSystem));
 
@@ -34,10 +36,12 @@ module fgui
             Laya.stage.addChild(fairygui.GRoot.inst.displayObject);
            
 
-			let findWindow = Find.FindWindow.createInstance();
+			let findWindow = <Find.FindWindow> Find.FindWindow.createInstance();
             fairygui.GRoot.inst.addChild(findWindow);
 
+			ihaiu.GameMain.FindWindow = findWindow;
 
+			this.sComplete.dispatch();
 		}
     }
 }

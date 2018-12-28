@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="600,400">
   <displayList>
-    <component id="n1_jaho" name="logTexArea" src="jaho2" fileName="TextArea.xml" xy="0,0" size="600,400">
+    <component id="n5_jaho" name="graph" src="jaho3" fileName="GraphView.xml" xy="0,0">
       <relation target="" sidePair="width-width,height-height"/>
-      <Label title="sa&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;&#xD;s&#xD;s&#xD;s&#xD;s&#xD;&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;s&#xD;" titleColor="#999999"/>
     </component>
-    <component id="n0_jaho" name="openSettingButton" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="250,360" size="100,40">
-      <relation target="" sidePair="center-center,bottom-bottom"/>
-      <Button title="设置数据"/>
+    <component id="n0_jaho" name="exportDataButton" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="4,357" size="100,40">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
+      <Button title="导出数据"/>
     </component>
-    <component id="n2_jaho" name="openSettingButton" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="487,360" size="100,40">
-      <relation target="" sidePair="right-right,bottom-bottom"/>
+    <component id="n2_jaho" name="clearLogButton" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="114,357" size="100,40">
+      <relation target="" sidePair="left-left,bottom-bottom"/>
       <Button title="清除日志"/>
     </component>
-    <component id="n3_jaho" name="settingPanel" src="jaho1" fileName="FindSettingPanel.xml" xy="0,0" hideByEditor="true">
-      <relation target="" sidePair="center-center,middle-middle"/>
+    <component id="n6_jaho" name="setDataButton_1" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="493,65" size="100,40">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="测试数据1"/>
     </component>
+    <component id="n7_jaho" name="setDataButton_2" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="493,112" size="100,40">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="测试数据2"/>
+    </component>
+    <component id="n8_jaho" name="setDataButton_0" src="jaho0" fileName="Button/Button.xml" pkg="uga4m7t5" xy="493,18" size="100,40">
+      <relation target="" sidePair="right-right,top-top"/>
+      <Button title="测试数据0"/>
+    </component>
+    <list id="n11_jaho" name="opList" xy="399,366" size="200,33" layout="row" overflow="scroll" scroll="horizontal" defaultItem="ui://uga4m7t5jaho36">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <item title="拖动节点" name="drag"/>
+      <item title="设置起点" name="start"/>
+      <item title="设置结束点" name="end"/>
+    </list>
+    <text id="n12_jaho" name="n12" xy="511,343" size="89,19" fontSize="12" color="#cccccc" strokeColor="#000000" text="操作模式选择：">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </text>
+    <list id="n13_jaho" name="mstList" xy="505,269" size="93,33" layout="row" overflow="scroll" scroll="horizontal" defaultItem="ui://uga4m7t5jaho36" align="right">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+      <item title="开  启" name="on"/>
+      <item title="关  闭" name="off"/>
+    </list>
+    <text id="n14_jaho" name="n14" xy="521,246" size="77,19" fontSize="12" color="#cccccc" strokeColor="#000000" text="最小生成树：">
+      <relation target="" sidePair="right-right,bottom-bottom"/>
+    </text>
   </displayList>
 </component>

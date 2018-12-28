@@ -4,6 +4,21 @@
     <component id="jaho0" name="FindWindow.xml" path="/" exported="true"/>
     <component id="jaho1" name="FindSettingPanel.xml" path="/" exported="true"/>
     <component id="jaho2" name="TextArea.xml" path="/" exported="true"/>
+    <component id="jaho3" name="GraphView.xml" path="/" exported="true"/>
+    <image id="jaho4" name="circular.png" path="/images/" exported="true"/>
+    <component id="jaho5" name="NodeView.xml" path="/" exported="true"/>
+    <component id="jaho6" name="LineView.xml" path="/" exported="true"/>
+    <image id="jaho7" name="line.png" path="/images/" exported="true"/>
+    <image id="jaho8" name="circular_disable.png" path="/images/" exported="true"/>
+    <image id="jahob" name="circular_green.png" path="/images/" exported="true"/>
+    <component id="jahoc" name="NodeColorView.xml" path="/" exported="true"/>
+    <image id="jahof" name="circular_start.png" path="/images/" exported="true"/>
+    <image id="jahog" name="circular_end.png" path="/images/" exported="true"/>
+    <component id="jahol" name="LineColorView.xml" path="/" exported="true"/>
+    <image id="jahom" name="line_disable.png" path="/images/" exported="true"/>
+    <image id="jahon" name="line_green.png" path="/images/" exported="true"/>
+    <image id="jahop" name="line_greenMax.png" path="/images/"/>
+    <image id="jahoq" name="line_redMax.png" path="/images/" exported="true"/>
   </resources>
   <publish name="Find" genCode="true"/>
 </packageDescription>

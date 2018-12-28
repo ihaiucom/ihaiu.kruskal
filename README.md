@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+## 最短寻路算法
+[最短寻路算法之Flody](https://blog.ihaiu.com/Floyd/#content) 
 
-You can use the [editor on GitHub](https://github.com/ihaiucom/ihaiu.kruskal/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+## 生成最小树算法
+[最小生成树之Prim普里姆算法](https://blog.ihaiu.com/Prim/#content) 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ihaiucom/ihaiu.kruskal/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 我的博客
+[https://blog.ihaiu.com](https://blog.ihaiu.com) 
+[在线测试](https://blog.ihaiu.com) 

@@ -190,6 +190,7 @@ var Find;
                             state = LineState.GreenMax;
                         }
                         view.setState(state);
+                        view.parent.addChildAt(view, this.lineViews.length);
                     }
                 }
             }

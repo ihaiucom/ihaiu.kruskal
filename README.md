@@ -33,7 +33,7 @@
 <p><img src="https://blog.ihaiu.com/web/path_algorithm/doc/images/03.gif" style="border: solid 1px #666;" /></p><br>
 
 
-<p>4. 修改数据
+<p>4. 修改数据 <br>
 (1) 先点击“导出数据按钮”，会在页面下方输出图形json数据 <br>
 (2) 编辑数据，点提交就可以修改了。只需要修改属性 x(起点), y(目标点), w(成本)
 </p>
